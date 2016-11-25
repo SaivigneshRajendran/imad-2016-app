@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="">
+	<meta name="keywords" content="" /> 
+	<meta name="author" content=""> 
+    <link rel="icon" type="image/png" href="assets/images/tn logo.png" >
+	<title>RATION PORTAL</title> 
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
+    <link href="css/icon.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet"> 
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript">
+function validateform() 
+{
+if (document.myform.uname.value=="") 
+{
+alert("first name must be filled out");
+document.myform.uname.focus();
+return false;
+}
+if (document.myform.sname.value=="") 
+{
+alert("second name must be filled out");
+document.myform.sname.focus();
+return false;
+}
+if (document.myform.password.value=="")
+{
+alert("please enter your password");
+document.myform.password.focus();
+return false;
+}
+if (document.myform.confrimpassword.value=="") 
+{
+alert("please enter your confrimpassword");
+document.myform.confrimpassword.focus();
+return false;
+}
+if (document.myform.email.value=="") 
+{
+alert("email must be filled out");
+document.myform.email.focus();
+return false;
+}
+if (document.myform.phone.value=="") 
+{
+alert("phone no must be filled out");
+document.myform.phone.focus();
+return false;
+}
+return(true);
+}
+</script>
+	
+
+
+</head><!--/head-->
+<body>
+	
+   <h1 align="middle"><b><font color="naveyblue">CREAT NEW ACCOUNT<b></font></h1>
+   <h4 align="middle">Sign in to continue to work</h4>
+<form name="myform" action="old.php" method="post" onSubmit="return validateform()">
+<table align="middle" border="0" >
+<tr>
+<th><img src="assets/images/adm5.jpg"></th>
+</tr>
+<tr>
+<th><i><b><font color="blue" font size="10"> NEW ACCOUNT</i></b></font></th>
+</tr>
+<tr>
+<td height="100"><font color= black font size="5">firstname:</font><br><input type="text"name="uname"size="35" placeholder="First name"><br><br></tr>
+<tr>
+<td height="100"><font color=black font size="5">secondname:</font><br><input type="text"name="sname"size="35" placeholder="Second name"></td></tr>
+<tr>
+<td height="100"><font color=black font size="5">username:</font><br><input type="text"name="fname"size="35" placeholder="user name"></td></tr>
+<tr>
+<td height="100" ><font color=black font size="5">password:</font><br><input type="password"name="password"size="35" maxlength=10 placeholder="Password"></td></tr>
+<tr>
+<td height="100"><font color=black font size="5">Confirm Password:</font><br><input type="password"name="confrimpassword"size="35" maxlength=10 placeholder="Password"></td></tr>
+<tr>
+<td height="100"><font color=black font size="5">Email Address:</font><br><input type="text"name="email"size="35" placeholder="@gamil"></td></tr>
+<tr>
+<td height="100"><font color=black font size="5">phone:</font><br><input type="text"name="phone"size="35" maxlength=10 placeholder="+91......"></td></tr>
+<tr>
+<tr>
+<div class="col-sm-3">
+<div class="single-service">
+<td align="center"><input type="submit" name="submit" class="btn btn-primary" value="sign in"  font size="5"></td>
+</div>
+</div>
+</tr>
+<tr>
+<td><u><font color="#000099"> Need help?</font></u></td></tr>
+<tr>
+
+</table>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
+	<script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>
